@@ -1,0 +1,28 @@
+{
+  "name": "technical_test",
+  "version": "1.0.0",
+  "description": "build a html mockup of calendar view using only html and css",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass src/styles.scss dist/styles.css",
+    "watch-css": "node-sass -w src/styles.scss dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamestaylor0685/charlieHRtechincalTest.git"
+  },
+  "keywords": [
+    "test",
+    "html",
+    "css"
+  ],
+  "author": "James Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamestaylor0685/charlieHRtechincalTest/issues"
+  },
+  "homepage": "https://github.com/jamestaylor0685/charlieHRtechincalTest#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

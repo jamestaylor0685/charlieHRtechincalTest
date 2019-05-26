@@ -1,0 +1,44 @@
+//normalise
+
+p {
+  margin: 0;
+}
+
+$box-padding: 15px 10px;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.grid {
+  display: grid;
+  &.w-2-row {
+    grid-template-rows: repeat(2, 10% auto);
+  }
+  &.w-5-row {
+    grid-template-rows: repeat(5, 1fr); 
+  }
+  &.w-7-col {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+*.w-label {
+  position: relative;
+}
+
+.calendar-wrapper {
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 3px;
+  .days-row {
+    .day {
+      padding: $box-padding;
+      text-transform: uppercase;
+      position: relative;
+      .working-day {
+        position: absolute;
+      }
+    }
+  }
+}
